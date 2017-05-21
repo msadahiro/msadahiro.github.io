@@ -3,6 +3,10 @@
 }
 body{
   margin: 0;
+  background-color:white;
+}
+.changeBackground{
+  background-color: black;
 }
 canvas{
   width: 100vw;
@@ -40,12 +44,16 @@ canvas>.row{
   margin-top: 40px;
 }
 #mainNav>ul>li>a{
-  margin: 3%
+  margin: 3%;
 }
 .nav-menu{
   background-color: white;
   color:#499E8D;
   border-radius: 10px;
+}
+.nav-menu>i{
+  font-size: 20px;
+  color:#499E8D;
 }
 .nav-contact{
   border-radius: 10px;
@@ -59,8 +67,8 @@ canvas>.row{
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     
 }
-.profession{
-  border-bottom: 5px solid black;
+.cover-desc{
+  text-decoration: underline;
 }
 .about-me{
   min-height: 70vh;
@@ -69,6 +77,7 @@ canvas>.row{
   background-color: rgba(255, 255, 255, .5);  
   padding: 5%;
   border-radius: 15px;
+  font-size: 20px;
 }
 .image{
   width: 350px;
@@ -109,9 +118,7 @@ canvas>.row{
   min-height: 100px;
   min-width: 150px;
 }
-.col-sm-6>h2{
-  display: inline-block;
-}
+
 .tech-used>h3{
   display: inline-block;
   border: 1px solid black;

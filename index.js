@@ -14,11 +14,18 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function() {
+    $("#changeBackground").click(function() {
+        $("body").toggleClass("changeBackground"); 
+
+    });
+});
+
 $(document).ready(function(){
-  $('.profession').html(`front-end.`)
+  $('.cover-desc').html(`front-end.`)
 })
 
-let wordArray = ['learning.','basketball.','hiking.','space.','pixels.','technology.','Seattle.'];
+let wordArray = ['learning.','open space.','pixels.','technology.','Seattle.','basketball.','hiking.','simple things.'];
 
 
 let position = 1;
@@ -28,7 +35,7 @@ let interval = setInterval(() => {
 
 
   setTimeout(() => {
-    $('.profession').html(`${randomWord}`);
+    $('.cover-desc').html(`${randomWord}`);
   }, 2000);
 
   if(position === wordArray.length-1){
