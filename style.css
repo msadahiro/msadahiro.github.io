@@ -88,9 +88,11 @@ canvas>.row{
   max-width: 400px;
   margin: 0 auto;
   cursor: pointer;
+  transition: transform 0.5s;
 }
 .portfolio-image:hover {
     transform: scale(1.2, 1.2); /** default is 1, scale it to 1.5 */
+    transition: transform 0.5s;
 }
 .col-sm{
   display: inline-block;
