@@ -8,84 +8,92 @@
     <meta name="description" content="Michael Sadahiro website">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"> 
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 </head>
 <body>
     <canvas></canvas>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-8"></div>
-            <div class="col-xs-6 col-md-5 pull-right">
-                <div class="collapse navbar-collapse" id="mainNav">
-                    <ul id="navlist" class="nav nav-justified">
-                        <li><a href="#" id="changeBackground" class="nav-menu"><i class="fa fa-adjust" aria-hidden="true"></i></a></li>
-                        <li><a href="#aboutMe" class="nav-menu">About</a></li>
-                        <li><a href="#myPortfolio" class="nav-menu">Work</a></li>
-                        <li><a href="#contactMe" class="nav-contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>      
-        </div>
         <div class="cover-info">
-            <div class="cover">
-                <h1 class="cover-title"><strong>Hi! I'm Michael. <br>
-                Developer who loves <span class="cover-desc"></span></strong>
-                </h1>
-            </div>  
-        </div>
-        <div class="about-me" id="aboutMe">
             <div class="row">
-                <div class="col-md-6 text-center">
-                    <img class="image" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwCAAAAJDMxZjBjNGFjLTMzNzItNDdmMi1hZGU0LTE1OTIzNGEzZGVjNg.jpg" alt="">
-                </div>
-                <div class="col-md-4">
-                    <div class="about-me-desc">
-                        <p>I'm a Web developer located in Seattle. I turn ideas into real-world solutions built around clarity & simplicity.</p>
-                        <a href="https://drive.google.com/open?id=0B6F6__HhPYw0UFh3LTVRRUNmb1k" target="_blank"><button type="button" class="btn btn-default">View Resume</button></a>
+                <div class="col-xs-12 col-sm-6 col-md-8"></div>
+                <div class="col-xs-6 col-md-5 pull-right">
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <ul id="navlist" class="nav nav-justified">
+                            <li><a href="#" id="changeBackground" class="nav-menu"><i class="fa fa-adjust" aria-hidden="true"></i></a></li>
+                            <li><a href="#myPortfolio" class="nav-menu">Work</a></li>
+                            <li><a href="#aboutMe" class="nav-menu">About</a></li>
+                            <li><a href="#contactMe" class="nav-contact">Contact</a></li>
+                        </ul>
                     </div>
-                </div>
+                </div>      
             </div>
+            <div class="cover">
+                <h1 class="cover-title">Michael Sadahiro</h1>
+                <h3 class="sub-heading">Let's make some magic <i class="em em-boom"></i></h3>
+                <!--a developer who loves <span class="cover-desc"></span></strong>--> 
+            </div>  
         </div>
         <div id="myPortfolio"class="portfolio">
             <div class="portfolio-container">
-                <h1>Projects</h1>
                 <div class="row">
                     <div class="col-md-2"> </div>
-                    <div class="col-md-8 project">
-                        <div class="col-md-6"><img class="portfolio-image" src="./images/events.png" alt="michael sadahiro event project"></div>
-                        <div class="col-md-6">
-                            <h2>MeetUps</h2> <a href="https://github.com/msadahiro/events" target="_blank"><i class="fa fa-github icon" aria-hidden="true"></i></a>
-                            <p>Perfect excuse for getting out of the house and doing fun activities with other people. This app allows users to create an account and make or sign up for events they are interested in. The best way to create lasting friendships is by doing common activities!</p>
-                            <div class="tech-used">
-                                <h3>C#</h3>
-                                <h3>.NET Core</h3>
-                                <h3>ASP.NET</h3>
-                                <h3>HTML5</h3>
-                                <h3>CSS3</h3>
-                                <h3>Bootstrap</h3>
-                                <h3>MySQL</h3>
-                            </div>
+                    <div class="col-md-8 project text-center">
+                        <div class="image-cropper">
+                        <a href="https://github.com/msadahiro/events" target="_blank"><img class="portfolio-image" src="./images/events.png" alt="michael sadahiro event project"></a></div>
+                        <h2 class="project-name">People Matter</h2>&nbsp<a href="https://github.com/msadahiro/events" target="_blank"><i class="fa fa-github icon" aria-hidden="true"></i></a>
+                        <p>I was asked to build a replica of meetup.com within 4 hours. The requirements were to create a login page, dashboard area to allow users to join/leave events,  allow users to create new events, and ability to click on event to see who else joined. Users cannot have conflicting meet up events. I designed the front-end and back-end with the languages/frameworks listed below. At the end of the 4 hours, the end user was pleased with the final solution I presented.</p>
+                        <div class="tech-used">
+                            <h1>C#</h1>
+                            <h1>.NET Core</h1>
+                            <h1>ASP.NET</h1>
+                            <h1>HTML5</h1>
+                            <h1>CSS3</h1>
+                            <h1>Bootstrap</h1>
+                            <h1>MySQL</h1>
                         </div>
                     </div>
                     <div class="col-md-2"></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-2"> </div>
-                    <div class="col-md-8 project">
-                        <div class="col-md-6"><img class="portfolio-image" src="./images/portfolio.png" alt="michael sadahiro website"></div>
-                        <div class="col-md-6">
-                            <h2>Portfolio</h2> <a href="https://github.com/msadahiro/msadahiro.github.io" target="_blank"><i class="fa fa-github icon" aria-hidden="true"></i></a>
-                            <p>Built my portfolio page from scratch! Really wanted to try to work with canvas. Will continue to add more functionality as time passes.</p>
-                            <div class="tech-used">
-                                <h3>HTML5</h3>
-                                <h3>CSS3</h3>
-                                <h3>jQuery</h3>
-                                <h3>Bootstrap</h3>
-                            </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 project text-center">
+                        <div class="image-cropper"><a href="https://github.com/msadahiro/msadahiro.github.io" target="_blank"><img class="portfolio-image" src="./images/portfolio.png" alt="michael sadahiro website"></a></div>    
+                        <h2 class="project-name">Portfolio</h2> &nbsp <a href="https://github.com/msadahiro/msadahiro.github.io" target="_blank"><i class="fa fa-github icon" aria-hidden="true"></i></a>
+                        <p>I built my profolio page from scratch. I really had a fun time designing the canvas portion of the website. I'm happy with what I was able to put together in a few days. I will definitely be adding more funactionality to this as time goes by.</p>
+                        <div class="tech-used">
+                            <h1>HTML5</h1>
+                            <h1>CSS3</h1>
+                            <h1>jQuery</h1>
+                            <h1>Bootstrap</h1>
                         </div>
                     </div>
                     <div class="col-md-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 project text-center">
+                        <div class="image-cropper"><a href="https://www.cleanraysenergy.com/" target="_blank"><img class="portfolio-image" src="./images/CRE.png" alt="Clean Rays Energy"></a></div>    
+                        <h2 class="project-name">Clean Rays Energy</h2>&nbsp<a href="https://www.cleanraysenergy.com/" target="_blank"><i class="fa fa-globe icon" aria-hidden="true"></i></a>
+                        <p>I was asked to help redesign a family-friend's company page. I was required to use the GoDaddy website builder. I completely revamped the entire website, including adding new content and pictures. The owner was happy with the outcome of his website. In the future, the next steps would probably to build it from scratch and just use GoDaddy as a host. </p>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="about-me" id="aboutMe">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 text-center">
+                <img class="about-me-image" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwCAAAAJDMxZjBjNGFjLTMzNzItNDdmMi1hZGU0LTE1OTIzNGEzZGVjNg.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+                <div class="about-me-desc">
+                    <p>I'm a Web developer located in Seattle. I turn ideas into real-world solutions built around clarity & simplicity. Looking for work in the front-end.</p>
+                    <a href="https://drive.google.com/open?id=0B6F6__HhPYw0UFh3LTVRRUNmb1k" target="_blank"><button type="button" class="btn btn-default">View Resume</button></a>
                 </div>
             </div>
         </div>

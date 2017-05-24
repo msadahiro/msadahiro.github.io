@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
   $("a").on('click', function(event) {
     if (this.hash !== "") {
@@ -12,35 +10,24 @@ $(document).ready(function(){
       });
     }
   });
-});
-
-$(document).ready(function() {
-    $("#changeBackground").click(function() {
+  $("#changeBackground").click(function() {
         $("body").toggleClass("changeBackground"); 
-
     });
+  $('.cover-desc').html(`front-end.`)
 });
 
-$(document).ready(function(){
-  $('.cover-desc').html(`front-end.`)
-})
-
-let wordArray = ['learning.','open space.','pixels.','technology.','Seattle.','basketball.','hiking.','simple things.'];
-
-
+let wordArray = ['learning','open space','pixels','technology','Seattle','basketball','hiking','simple things'];
 let position = 1;
 let randomWord = wordArray[position];
 let interval = setInterval(() => {
   let randomWord = wordArray[position];
-
-
   setTimeout(() => {
     $('.cover-desc').html(`${randomWord}`);
   }, 2000);
-
   if(position === wordArray.length-1){
     position = 0;
-  }else{
+  }
+  else{
     position++;
   }
 },2000);

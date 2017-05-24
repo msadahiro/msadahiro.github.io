@@ -1,5 +1,13 @@
+@font-face{
+  font-family: "jedi";
+  src: url('fonts/Starjedi.ttf');
+}
 *{
   font-family: 'Roboto', sans-serif;
+}
+h1,
+h2{
+    font-family: 'jedi';
 }
 body{
   margin: 0;
@@ -47,9 +55,9 @@ canvas>.row{
   color: white;
 }
 .cover-info{
-  border-radius: 15px;
-  width: 100%;
-  min-height: 75vh;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
 }
 .cover{
   padding-left: 10%;
@@ -60,11 +68,15 @@ canvas>.row{
 }
 
 .cover-title{
-    padding-top: 5%;
-    margin: 10%;
-    margin-left: 5%;
-    font-size: 50px;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  margin-top: 5%;
+  padding-top: 5%;
+  margin-left: 5%;
+  font-size: 80px;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.sub-heading{
+  margin-left: 5%;
 }
 .cover-desc{
   text-decoration: underline;
@@ -74,61 +86,72 @@ canvas>.row{
   margin-top: 2%;
 }
 .about-me{
-  min-height: 70vh;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  width: 100vw;
+  min-height: 50vh;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
 }
 .about-me-desc{
+  margin-top: 15%;
   background-color: rgba(255, 255, 255, .5);  
-  padding-top: 10%;
   padding: 5%;
   border-radius: 15px;
   font-size: 20px;
 }
-.image{
+.about-me-image{
   width: 350px;
   height: 350px;
   border-radius: 50%;
   display: inline-block;
-  margin-left: 150px;
 }
 .portfolio-container{
   background-color: #F5F7F9;
   min-height: 100vh;
+  padding-bottom: 2%;
 }
+
 .portfolio-container>.row>.col-md-8{
-  padding: 10px;
-  padding-bottom: 30px;
-}
-.portfolio-container>.row>.col-md-8>.col-sm-6>p{
-  min-height: 100px;
-  min-width: 150px;
+  padding: 25px;
+  border-bottom: 1px solid gray;
 }
 .portfolio-container>h1{
   padding-top: 20px;
   margin: 0 auto;
   text-align: center; 
 }
-.project{
-  border-bottom: 1px solid gray;
-  width: 70%;
+.project p{
+  margin: 0 auto;
+  width: 60%;
+  padding: 1%;
+}
+.project-name{
+  display: inline-block;
+}
+
+.image-cropper{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
 }
 .portfolio-image{
-  max-height: 400px;
-  max-width: 400px;
-  margin: 0 auto;
-  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
   transition: transform 0.5s;
-}
-.portfolio-image:hover {
-    transform: scale(1.2, 1.2); /** default is 1, scale it to 1.5 */
-    transition: transform 0.5s;
 }
 .col-sm{
   display: inline-block;
 }
 
-.tech-used>h3{
+.tech-used>h1{
   display: inline-block;
   border: 1px solid black;
   border-radius: 10px;
@@ -137,6 +160,7 @@ canvas>.row{
   font-size: 20px;
   min-width: 100px;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 .col-md-8>.icon{
   color: #9BBFAB;
@@ -149,7 +173,7 @@ canvas>.row{
 }
 
 .contact-me{
-  min-height: 90vh;
+  min-height: 85vh;
   background-color: #413659;
 }
 .contact-container>h1{
@@ -197,4 +221,3 @@ canvas>.row{
   background-color: #262729;
   color: #526173;
 }
-
