@@ -2,6 +2,10 @@
   font-family: "jedi";
   src: url('fonts/Starjedi.ttf');
 }
+@font-face{
+  font-family: "accid";
+  src: url('fonts/accid___.ttf');
+}
 *{
   font-family: 'Roboto', sans-serif;
 }
@@ -11,11 +15,11 @@ h2{
 }
 body{
   margin: 0;
-  background-color:white;
+  background-color: #F2EFDF;
   transition: background-color 0.5s ease;
 }
 .changeBackground{
-  background-color: black;
+  background-color:#413659;
   transition: background-color 0.5s ease;
 }
 canvas{
@@ -39,15 +43,18 @@ canvas>.row{
 }
 #mainNav>ul>li>a{
   margin: 3%;
+  
 }
 .nav-menu{
   background-color: white;
   color:#499E8D;
   border-radius: 10px;
 }
-.nav-menu>i{
-  font-size: 20px;
+.fa-adjust{
+  background-color: transparent;
+  font-size: 16px;
   color:#499E8D;
+  border-radius: 10px;
 }
 .nav-contact{
   border-radius: 10px;
@@ -72,11 +79,15 @@ canvas>.row{
   padding-top: 5%;
   margin-left: 5%;
   font-size: 80px;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
 }
 
 .sub-heading{
   margin-left: 5%;
+  font-family: 'accid';
+  font-size: 28px;
+  word-spacing: 3px;
+  letter-spacing: 4px;
 }
 .cover-desc{
   text-decoration: underline;
@@ -135,6 +146,12 @@ canvas>.row{
   overflow: hidden;
   border-radius: 50%;
   margin: 0 auto;
+  transition: all 0.5s;
+  transform: scale(1)
+}
+.image-cropper:hover{
+  transform: scale(1.2,1.2);
+  transition: all 0.5s ease-out;
 }
 .portfolio-image{
   position: absolute;
@@ -157,7 +174,7 @@ canvas>.row{
   border-radius: 10px;
   margin: 1px;
   padding: 5px;
-  font-size: 20px;
+  font-size: 14px;
   min-width: 100px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -174,7 +191,7 @@ canvas>.row{
 
 .contact-me{
   min-height: 85vh;
-  background-color: #413659;
+  background-color: #656F8C;
 }
 .contact-container>h1{
   margin-top: 0;
@@ -212,7 +229,7 @@ canvas>.row{
 }
 .footer-icon-container>a>i{
   padding-top: 40px;
-  color: #413659;
+  color: #656F8C;
   font-size: 30px;
   text-indent: 20px;
 }

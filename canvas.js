@@ -10,7 +10,7 @@ var mouse = {
     x:undefined,
     y:undefined
 }
-var maxRadius = 100;
+var maxRadius = 400;
 
 var colorArray = [
     '#211426',
@@ -77,7 +77,7 @@ function init(){
 
     // creating the cirlcle
     for(var i = 0; i < 50; i++){
-        var radius = Math.random() * 3 + 50;
+        var radius = Math.random() * 3 + 100;
         var x = Math.random() * (innerWidth - radius * 2) + radius;
         var y = Math.random() * (innerHeight - radius * 2) + radius;
         var dx = (Math.random() - 0.5);
