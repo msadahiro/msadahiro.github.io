@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Michael Sadahiro</title>
     <meta charset="UTF-8">
@@ -7,124 +8,144 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Michael Sadahiro website">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+
 </head>
+
 <body>
     <canvas></canvas>
-        <div class="cover-info">
+    <div class="cover-info">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-8"></div>
+            <div class="col-xs-6 col-md-5 pull-right">
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul id="navlist" class="nav nav-justified">
+                        <li><a href="#" id="changeBackground"><i class="fa fa-adjust" aria-hidden="true"></i></a></li>
+                        <li><a href="#myPortfolio" class="nav-menu">Work</a></li>
+                        <li><a href="#aboutMe" class="nav-menu">About</a></li>
+                        <li><a href="#contactMe" class="nav-contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cover">
+            <h1 class="cover-title">Michael Sadahiro</h1>
+            <h3 class="sub-heading">LETS MAKE SOME MAGIC <i class="em em-boom"></i></h3>
+        </div>
+    </div>
+    <div id="myPortfolio" class="portfolio">
+        <div class="portfolio-container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-8"></div>
-                <div class="col-xs-6 col-md-5 pull-right">
-                    <div class="collapse navbar-collapse" id="mainNav">
-                        <ul id="navlist" class="nav nav-justified">
-                            <li><a href="#" id="changeBackground"><i class="fa fa-adjust" aria-hidden="true"></i></a></li>
-                            <li><a href="#myPortfolio" class="nav-menu">Work</a></li>
-                            <li><a href="#aboutMe" class="nav-menu">About</a></li>
-                            <li><a href="#contactMe" class="nav-contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>      
-            </div>
-            <div class="cover">
-                <h1 class="cover-title">Michael Sadahiro</h1>
-                <h3 class="sub-heading">LETS MAKE SOME MAGIC <i class="em em-boom"></i></h3>
-            </div>  
-        </div>
-        <div id="myPortfolio"class="portfolio">
-            <div class="portfolio-container">
-                <div class="row">
-                    <div class="col-md-2"> </div>
-                    <div class="col-md-8 project text-center">
-                        <div class="image-cropper">
+                <div class="col-md-2"> </div>
+                <div class="col-md-8 project text-center">
+                    <div class="image-cropper">
                         <a href="https://github.com/msadahiro/events" target="_blank"><img class="portfolio-image" src="./images/events.png" alt="michael sadahiro event project"></a></div>
-                        <h2 class="project-name">People Matter</h2>&nbsp<a href="https://github.com/msadahiro/events" target="_blank"><i class="fa fa-github icon" aria-hidden="true"></i></a>
-                        <p>I was asked to build a replica of meetup.com within 4 hours. The requirements were to create a login page, dashboard area to allow users to join/leave events,  allow users to create new events, and ability to click on event to see who else joined. Users cannot have conflicting meet up events. I designed the front-end and back-end with the languages/frameworks listed below. At the end of the 4 hours, the end user was pleased with the final solution I presented.</p>
-                        <div class="tech-used">
-                            <h1>C#</h1>
-                            <h1>.NET Core</h1>
-                            <h1>ASP.NET</h1>
-                            <h1>HTML5</h1>
-                            <h1>CSS3</h1>
-                            <h1>Bootstrap</h1>
-                            <h1>MySQL</h1>
-                        </div>
+                    <h2>People Matter</h2>&nbsp<a href="https://github.com/msadahiro/events" target="_blank"><i class="fa fa-github icon" aria-hidden="true"></i></a>
+                    <p>I was asked to build a replica of meetup.com within 4 hours. The requirements were to create a login
+                        page, dashboard area to allow users to join/leave events, allow users to create new events, and ability
+                        to click on event to see who else joined. Users cannot have conflicting meet up events. I designed
+                        the front-end and back-end with the languages/frameworks listed below. At the end of the 4 hours,
+                        the end user was pleased with the final solution I presented.</p>
+                    <div class="tech-used">
+                        <h1>C#</h1>
+                        <h1>.NET Core</h1>
+                        <h1>ASP.NET</h1>
+                        <h1>HTML5</h1>
+                        <h1>CSS3</h1>
+                        <h1>Bootstrap</h1>
+                        <h1>MySQL</h1>
                     </div>
-                    <div class="col-md-2"></div>
                 </div>
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8 project text-center">
-                        <div class="image-cropper"><a href="https://github.com/msadahiro/msadahiro.github.io" target="_blank"><img class="portfolio-image" src="./images/portfolio.png" alt="michael sadahiro website"></a></div>    
-                        <h2 class="project-name">Portfolio</h2> &nbsp <a href="https://github.com/msadahiro/msadahiro.github.io" target="_blank"><i class="fa fa-github icon" aria-hidden="true"></i></a>
-                        <p>I built my profolio page from scratch. I really had a fun time designing the canvas portion of the website. I'm happy with what I was able to put together in a few days. I will definitely be adding more funactionality to this as time goes by.</p>
-                        <div class="tech-used">
-                            <h1>HTML5</h1>
-                            <h1>CSS3</h1>
-                            <h1>jQuery</h1>
-                            <h1>Bootstrap</h1>
-                        </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 project text-center">
+                    <div class="image-cropper"><a href="https://github.com/msadahiro/msadahiro.github.io" target="_blank"><img class="portfolio-image" src="./images/portfolio.png" alt="michael sadahiro website"></a></div>
+                    <h2>Portfolio</h2> &nbsp <a href="https://github.com/msadahiro/msadahiro.github.io" target="_blank"><i class="fa fa-github icon" aria-hidden="true"></i></a>
+                    <p>I built my profolio page from scratch. I really had a fun time designing the canvas portion of the website.
+                        I'm happy with what I was able to put together in a few days. I will definitely be adding more funactionality
+                        to this as time goes by.</p>
+                    <div class="tech-used">
+                        <h1>HTML5</h1>
+                        <h1>CSS3</h1>
+                        <h1>jQuery</h1>
+                        <h1>Bootstrap</h1>
                     </div>
-                    <div class="col-md-2"></div>
                 </div>
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8 project text-center">
-                        <div class="image-cropper"><a href="https://www.cleanraysenergy.com/" target="_blank"><img class="portfolio-image" src="./images/CRE.png" alt="Clean Rays Energy"></a></div>    
-                        <h2 class="project-name">Clean Rays Energy</h2>&nbsp<a href="https://www.cleanraysenergy.com/" target="_blank"><i class="fa fa-globe icon" aria-hidden="true"></i></a>
-                        <p>I was asked to help redesign a family-friend's company page. I was required to use the GoDaddy website builder. I completely revamped the entire website, including adding new content and pictures. The owner was happy with the outcome of his website. In the future, the next steps would probably to build it from scratch and just use GoDaddy as a host. </p>
-                    </div>
-                    <div class="col-md-2"></div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 project text-center">
+                    <div class="image-cropper"><a href="https://www.cleanraysenergy.com/" target="_blank"><img class="portfolio-image" src="./images/CRE.png" alt="Clean Rays Energy"></a></div>
+                    <h2>Clean Rays Energy</h2>&nbsp<a href="https://www.cleanraysenergy.com/" target="_blank"><i class="fa fa-globe icon" aria-hidden="true"></i></a>
+                    <p>I was asked to help redesign a family-friend's company page. I was required to use the GoDaddy website
+                        builder. I completely revamped the entire website, including adding new content and pictures. The
+                        owner was happy with the outcome of his website. In the future, the next steps would probably to
+                        build it from scratch and just use GoDaddy as a host. </p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="about-me" id="aboutMe">
+        <div class="col-md-2"></div>
+        <div class="col-md-4 text-center">
+            <img class="about-me-image" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwCAAAAJDMxZjBjNGFjLTMzNzItNDdmMi1hZGU0LTE1OTIzNGEzZGVjNg.jpg"
+                alt="">
+        </div>
+        <div class="col-md-4">
+            <div class="about-me-desc">
+                <p>I'm a Web developer located in Seattle. I turn ideas into real-world solutions built around clarity & simplicity.
+                    Looking for work in the front-end.</p>
+                <a href="https://drive.google.com/open?id=0B6F6__HhPYw0UFh3LTVRRUNmb1k" target="_blank"><button type="button" class="btn btn-default">View Resume</button></a>
+            </div>
+        </div>
+    </div>
+    <div id="contactMe" class="contact-me">
+        <div class="contact-container text-center">
+            <h1>Contact Me</h1>
+            <h2 class="sub-heading">I'm always looking forward to new opportunities</h2>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <a href="mailTo:michaelsadahiro@gmail.com"><i class="fa fa-envelope contact-icon" aria-hidden="true"></i>&nbsp michaelsadahiro@gmail.com</a><br>
+                    <i class="fa fa-mobile contact-icon" aria-hidden="true"></i><span class="phone">&nbsp +1 (626) 232-5845</span>
                 </div>
             </div>
         </div>
-        <div class="about-me" id="aboutMe">
-            <div class="col-md-2"></div>
-            <div class="col-md-4 text-center">
-                <img class="about-me-image" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwCAAAAJDMxZjBjNGFjLTMzNzItNDdmMi1hZGU0LTE1OTIzNGEzZGVjNg.jpg" alt="">
-            </div>
-            <div class="col-md-4">
-                <div class="about-me-desc">
-                    <p>I'm a Web developer located in Seattle. I turn ideas into real-world solutions built around clarity & simplicity. Looking for work in the front-end.</p>
-                    <a href="https://drive.google.com/open?id=0B6F6__HhPYw0UFh3LTVRRUNmb1k" target="_blank"><button type="button" class="btn btn-default">View Resume</button></a>
-                </div>
-            </div>
-        </div>
-        <div id="contactMe" class="contact-me">
-            <div class="contact-container text-center">
-                <h1>Contact Me</h1>
-                <h2 class="sub-heading">I'm always looking forward to new opportunities</h2>
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
-                        <a href="mailTo:michaelsadahiro@gmail.com"><i class="fa fa-envelope contact-icon" aria-hidden="true"></i>&nbsp michaelsadahiro@gmail.com</a><br>
-                        <i class="fa fa-mobile contact-icon" aria-hidden="true"></i><span class="phone">&nbsp +1 (626) 232-5845</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="footerIcon">
-            <div class="footer-icon-container text-center">
-                <a href="mailTo:michaelsadahiro@gmail.com"><i class="fa fa-envelope icon" aria-hidden="true"></i>
+    </div>
+    <div id="footerIcon">
+        <div class="footer-icon-container text-center">
+            <a href="mailTo:michaelsadahiro@gmail.com"><i class="fa fa-envelope icon" aria-hidden="true"></i>
                 <a href="https://www.linkedin.com/in/michaelsadahiro/" target="_blank"><i class="fa fa-linkedin-square icon" aria-hidden="true"></i></a>
-                <a href="https://github.com/msadahiro" target="_blank"><i class="fa fa-github icon" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/sadahiro.michael" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/myykosadahiro/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
+            <a href="https://github.com/msadahiro" target="_blank"><i class="fa fa-github icon" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/sadahiro.michael" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/myykosadahiro/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         </div>
-        <div id="footer">
-            <div class="footer-container">
-                © <script>document.write(new Date().getFullYear());</script> Michael Sadahiro
-            </div>
+    </div>
+    <div id="footer">
+        <div class="footer-container">
+            ©
+            <script>
+                document.write(new Date().getFullYear());
+            </script> Michael Sadahiro
         </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <script src="canvas.js"></script>
-</body>        
+</body>
+
 </html>
