@@ -6,11 +6,13 @@
   font-family: "accid";
   src: url('fonts/accid___.ttf');
 }
+
 *{
   font-family: 'Roboto', sans-serif;
 }
 h1,
 h2{
+  margin: 0;
     font-family: 'jedi';
 }
 body{
@@ -18,194 +20,238 @@ body{
   background-color: #F2EFDF;
   transition: background-color 0.5s ease;
 }
+#adjustIcon{
+  margin:2%;
+  padding: 0.5% 1%;
+  box-shadow: 1px;
+  float: right;
+  font-size: 24px;
+}
+.adjustIconColor{
+  color: white;
+}
 .changeBackground{
   background-color:#413659;
   transition: background-color 0.5s ease;
 }
+.menuArea{
+  display: inline-block;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+}
+.bar1,
+.bar2,
+.bar3{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0 0 10px;
+  border: 1px solid #F2EFDF;
+}
+.change  #myNav{
+  width: 100%;
+}
+.change .bar1,
+.change .bar2,
+.change .bar3{
+  opacity: 0;
+}
+.overlay{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.overlay-content{
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+.overlay a:hover, 
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
 canvas{
-  width: 100vw;
-  height: 100vh;
   display: block;
   position: fixed;
   top: 0;
   left: 0;
   z-index: -9999;
 }
-canvas>.row{
-  position: relative;
-}
-.nav>li>a:focus, .nav>li>a:hover {
-  text-decoration: underline;
-  background-color: transparent !important;
-}
-#mainNav{
-  padding-top: 40px;
-}
-#mainNav>ul>li>a{
-  margin: 3%;
-  
-}
-.nav-menu{
-  background-color: white;
-  color:#499E8D;
-  border-radius: 10px;
-}
-.fa-adjust{
-  background-color: transparent;
-  font-size: 16px;
-  color:#499E8D;
-  border-radius: 10px;
-}
-.nav-contact{
-  border-radius: 10px;
-  background-color: #499E8D;
-  color: white;
-}
-.cover-info{
-  width: 100vw;
-  height: 100vh;
-  min-height: 100%;
+.canvas-cover{
+  padding: 10% 0 0 0;
+  height: 80vh;
 }
 .cover{
   padding-left: 10%;
-  padding-bottom: 2%;
   width: 100%;
+  display: block;
   background-color: rgba(255, 255, 255, .5);  
-  position: relative;
 }
 
 .cover-title{
-  margin-top: 5%;
-  padding-top: 5%;
-  margin-left: 5%;
   font-size: 80px;
-  /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
 }
 
 .sub-heading{
   margin-left: 5%;
+  padding-bottom: 2%;
   font-family: 'accid';
   font-size: 28px;
   word-spacing: 3px;
   letter-spacing: 4px;
 }
-.togglebutton{
-  margin-left: 5%;
-  margin-top: 2%;
-}
-.about-me{
-  width: 100vw;
-  min-height: 50vh;
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
+
+.about-me,
+.portfolio-container{
+  padding: 2% 0;
+  width: 100%;
+  background-color: #F5F7F9;
+  text-align: center;
+  position: relative;
+  margin: 0 0 0 0;
 }
 .about-me-desc{
-  margin-top: 15%;
-  background-color: rgba(255, 255, 255, .5);  
-  padding: 5%;
-  border-radius: 15px;
   font-size: 20px;
+  width: 40%;
+  vertical-align: top;
+  margin: 0 0 0 15%;
+  display: inline-block;
+  text-align: center;
 }
 .about-me-image{
-  width: 75%;
-  min-height: 75%;
+  width: 40%;
+  min-height: 40%;
   border-radius: 50%;
   display: inline-block;
 }
-.portfolio-container{
+b{
+  text-decoration: underline;
+}
+.resumeButton{
+  padding: 2%;
   background-color: #F5F7F9;
-  min-height: 100vh;
-  padding-bottom: 2%;
+  border: 1px solid black;
 }
-
-.portfolio-container>.row>.col-md-8{
-  padding: 25px;
-  border-bottom: 1px solid gray;
+.resumeButton:hover{
+  cursor: pointer;
 }
-.portfolio-container>h1{
-  padding-top: 20px;
+.aboutMeIntro,
+.aboutMeSkills,
+.workExperience{
+  width: 50%;
+  text-align: left;
   margin: 0 auto;
-  text-align: center; 
 }
-.project p{
-  margin: 0 auto;
-  width: 60%;
-  padding: 1%;
-}
-
-.image-cropper{
+.workExperience-Row{
+  width: 100%;
+  padding: 2% 0;
   position: relative;
+}
+.jobs >h3,
+.jobs>p{
+  margin: 0;
+}
+.jobs{
+  width: 100%;
+  display: inline-block;
+}
+.jobs ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.jobs ul > li:before{
+  content: "- ";
+}
+.jobs-timePeriod{
+  top: 0;
+  float: right;
+  margin: 0;
+}
+
+
+.image-cropper {
   width: 200px;
   height: 200px;
   overflow: hidden;
   border-radius: 50%;
-  margin: 0 auto;
+  margin: 0 2%;
   transition: all 0.5s;
-  transform: scale(1)
+  transform: scale(1);
+  display: inline-block;
 }
 .image-cropper:hover{
   transform: scale(1.2,1.2);
   transition: all 0.5s ease-out;
+  cursor: pointer;
 }
-.portfolio-image{
-  position: absolute;
-  left: 50%;
-  top: 50%;
+.workArea{
+  width: 50%;
+  margin: 0 auto;
+}
+.portfolio-image {
   height: 100%;
   width: auto;
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-  transition: transform 0.5s;
 }
-
-
-.tech-used>h1{
-  display: inline-block;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: 1px;
-  padding: 5px;
-  font-size: 14px;
-  min-width: 100px;
+.hiddenLabel{
+  display: none;
+}
+.projectLabel{
+  background-color: #F5F7F9;
+  padding: 1%;
+  width: 100%;
+  position: absolute;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%)
 }
-.col-md-8>.icon{
-  color: #9BBFAB;
-}
-.col-md-8>a{
+
+
+.bottom-link{
   color: #9BBFAB;
 }
 .phone{
   color: #9BBFAB;
 }
 .contact-me{
-  min-height: 85vh;
   background-color: #656F8C;
 }
+.contact-container{
+  text-align: center;
+  padding: 2%;
+}
 .contact-container>h1{
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 5%;
   font-size: 50px;
   color: white;
 }
-.contact-container>h4{
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 30px;
-  padding-top: 20px;
-  color: white;
-}
-.contact-container>.row{
-  padding: 0;
+.contact-container>a{
+  text-decoration: none;
 }
 .contact-icon{
   color: white;
-}
-.contact-icon:hover{
-  font-size: 30px;
 }
 .icon{
   color: black;
@@ -216,16 +262,61 @@ canvas>.row{
 }
 .footer-icon-container{
   min-height: 100px;
-  background-color: darkgray
+  background-color: darkgray;
+  text-align: center;
 }
 .footer-icon-container>a>i{
-  padding-top: 40px;
+  margin: 40px 0 0 20px;
   color: #656F8C;
   font-size: 30px;
-  text-indent: 20px;
 }
 .footer-container{
+  text-align: center;
   min-height: 30px; 
   background-color: #262729;
   color: #526173;
+}
+
+/*Meetings others*/
+
+#meetingOthersHeading,
+#txGeneticsHeading{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+#meetingOthersHeading > img,
+#txGeneticsHeading > img{
+  width: 100%;
+}
+#content{
+  width: 60%;
+  margin: 1% auto;
+}
+#content > h1,
+#content > p{
+  text-align: center;
+}
+
+.githubLinks{
+  display: inline-block;
+}
+.screenshots{
+  text-align: center;
+  margin: 0 auto;
+}
+.screenshots > img{
+  max-width: 100%;
+}
+.backLink{
+  position: fixed;
+  margin-left: 10%;
+}
+.backLink > a{
+  color: black;
+  text-decoration: none;
+  font-size: 40px;
+}
+.backLink > a:hover{
+  cursor: pointer;
 }

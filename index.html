@@ -8,9 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Michael Sadahiro website">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
 
@@ -23,116 +20,145 @@
 </head>
 
 <body>
-    <canvas></canvas>
-    <div class="cover-info">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-8"></div>
-            <div class="col-xs-6 col-md-5 pull-right">
-                <div class="collapse navbar-collapse" id="mainNav">
-                    <ul id="navlist" class="nav nav-justified">
-                        <li><a href="#" id="changeBackground"><i class="fa fa-adjust" aria-hidden="true"></i></a></li>
-                        <li><a href="#myPortfolio" class="nav-menu">Work</a></li>
-                        <li><a href="#aboutMe" class="nav-menu">About</a></li>
-                        <li><a href="#contactMe" class="nav-contact">Contact</a></li>
-                    </ul>
-                </div>
+    <div class="menuArea" onclick="openMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn">&times;</a>
+            <!-- Button to close the overlay navigation -->
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="#home">Home</a>
+                <a href="#aboutMe">About</a>
+                <a href="#work">Work</a>
+                <a href="#contactMe">Contact</a>
+                <a href="https://drive.google.com/open?id=0B6F6__HhPYw0N21TSlAzNTAwX00" target="_blank">Resume</a>
             </div>
-        </div>
-        <div class="cover">
-            <h1 class="cover-title">Michael Sadahiro</h1>
-            <h3 class="sub-heading">LETS MAKE SOME MAGIC <i class="em em-boom"></i></h3>
         </div>
     </div>
-    <div id="myPortfolio" class="portfolio">
-        <div class="portfolio-container">
-            <div class="row">
-                <div class="col-md-2"> </div>
-                <div class="col-md-8 project text-center">
-                    <div class="image-cropper">
-                        <a href="https://github.com/msadahiro/events" target="_blank"><img class="portfolio-image" src="./images/events.png" alt="michael sadahiro event project"></a></div>
-                    <h2>People Matter</h2>&nbsp<a href="https://github.com/msadahiro/events" target="_blank"><i class="fa fa-github icon" aria-hidden="true"></i></a>
-                    <p>I was asked to build a replica of meetup.com within 4 hours. The requirements were to create a login
-                        page, dashboard area to allow users to join/leave events, allow users to create new events, and ability
-                        to click on event to see who else joined. Users cannot have conflicting meet up events. I designed
-                        the front-end and back-end with the languages/frameworks listed below. At the end of the 4 hours,
-                        the end user was pleased with the final solution I presented.</p>
-                    <div class="tech-used">
-                        <h1>C#</h1>
-                        <h1>.NET Core</h1>
-                        <h1>ASP.NET</h1>
-                        <h1>HTML5</h1>
-                        <h1>CSS3</h1>
-                        <h1>Bootstrap</h1>
-                        <h1>MySQL</h1>
-                    </div>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 project text-center">
-                    <div class="image-cropper"><a href="https://github.com/msadahiro/msadahiro.github.io" target="_blank"><img class="portfolio-image" src="./images/portfolio.png" alt="michael sadahiro website"></a></div>
-                    <h2>Portfolio</h2> &nbsp <a href="https://github.com/msadahiro/msadahiro.github.io" target="_blank"><i class="fa fa-github icon" aria-hidden="true"></i></a>
-                    <p>I built my profolio page from scratch. I really had a fun time designing the canvas portion of the website.
-                        I'm happy with what I was able to put together in a few days. I will definitely be adding more funactionality
-                        to this as time goes by.</p>
-                    <div class="tech-used">
-                        <h1>HTML5</h1>
-                        <h1>CSS3</h1>
-                        <h1>jQuery</h1>
-                        <h1>Bootstrap</h1>
-                    </div>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 project text-center">
-                    <div class="image-cropper"><a href="https://www.cleanraysenergy.com/" target="_blank"><img class="portfolio-image" src="./images/CRE.png" alt="Clean Rays Energy"></a></div>
-                    <h2>Clean Rays Energy</h2>&nbsp<a href="https://www.cleanraysenergy.com/" target="_blank"><i class="fa fa-globe icon" aria-hidden="true"></i></a>
-                    <p>I was asked to help redesign a family-friend's company page. I was required to use the GoDaddy website
-                        builder. I completely revamped the entire website, including adding new content and pictures. The
-                        owner was happy with the outcome of his website. In the future, the next steps would probably to
-                        build it from scratch and just use GoDaddy as a host. </p>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
+    <div id="adjustIcon">
+        <a href="#" id="changeBackground">
+            <i id="adjustIconColor" class="fa fa-adjust" aria-hidden="true"></i>
+        </a>
+    </div>
+    <canvas></canvas>
+    <div id="home" class="canvas-cover">
+        <div class="cover">
+            <h1 class="cover-title">Michael Sadahiro</h1>
+            <h3 class="sub-heading">LETS MAKE SOME MAGIC
+                <i class="em em-boom"></i>
+            </h3>
         </div>
     </div>
     <div class="about-me" id="aboutMe">
-        <div class="col-md-2"></div>
-        <div class="col-md-4 text-center">
+        <h1>About Me</h1>
+        <div class="aboutMeIntro">
             <img class="about-me-image" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwCAAAAJDMxZjBjNGFjLTMzNzItNDdmMi1hZGU0LTE1OTIzNGEzZGVjNg.jpg"
                 alt="">
-        </div>
-        <div class="col-md-4">
             <div class="about-me-desc">
-                <p>I'm a Web developer located in Seattle. I turn ideas into real-world solutions built around clarity & simplicity.
-                    Looking for work in the front-end.</p>
-                <a href="https://drive.google.com/open?id=0B6F6__HhPYw0UFh3LTVRRUNmb1k" target="_blank"><button type="button" class="btn btn-default">View Resume</button></a>
+                <p>Hey! I'm Michael, I'm a software engineer building cool things in JavaScript at
+                    <strong>Tx Genetics</strong>, in Seattle. </p>
+                <p> I love what I do because I get to learn, create, and grow as a developer. The thirst for knowledge is what
+                    keeps me moving forward.
+                </p>
+                <a href="https://drive.google.com/open?id=0B6F6__HhPYw0N21TSlAzNTAwX00" target="_blank">
+                    <button type="button" class="resumeButton">View Resume</button>
+                </a>
+            </div>
+        </div>
+
+
+        <h1>Skills</h1>
+        <div class="aboutMeSkills">
+            <p>
+                <b>Strong:</b> HTML5, CSS3, JavaScript, React.js</p>
+            <p>
+                <b>Proficient:</b> Redux, Node.js, MongoDb, AWS</p>
+            <p>
+                <b>Learning:</b> GraphQL, Vue.js
+            </p>
+        </div>
+        <h1>Relevant Work Experience</h1>
+        <div class="workExperience">
+            <div class="workExperience-Row">
+                <div class="jobs">
+                    <h3>Web Development Engineer (Contract)</h3>
+                    <p class="jobs-timePeriod">July 2017 - Present</p>
+                    <p>Tx Genetics | Seattle, WA</p>
+                </div>
+            </div>
+            <div class="workExperience-Row">
+                <div class="jobs">
+                    <h3>Web Development Mentor</h3>
+                    <p class="jobs-timePeriod">January 2017 - Present</p>
+                    <p>Recursive Thinking | Seattle, WA</p>
+                </div>
+            </div>
+            <div class="workExperience-Row">
+                <div class="jobs">
+                    <h3>Web Development Immersive</h3>
+                    <p class="jobs-timePeriod">December 2016 - April 2017</p>
+                    <p>Coding Dojo | Seattle, WA</p>
+                    <ul>
+                        <li>A 14 week, 70+ hours per week web development accelerator program.</li>
+                        <li>Learned about designing, planning, and building web applications on both the front-end and back-end.</li>
+                    </ul>
+
+                </div>
+
             </div>
         </div>
     </div>
-    <div id="contactMe" class="contact-me">
-        <div class="contact-container text-center">
-            <h1>Contact Me</h1>
-            <h2 class="sub-heading">I'm always looking forward to new opportunities</h2>
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                    <a href="mailTo:michaelsadahiro@gmail.com"><i class="fa fa-envelope contact-icon" aria-hidden="true"></i>&nbsp michaelsadahiro@gmail.com</a><br>
-                    <i class="fa fa-mobile contact-icon" aria-hidden="true"></i><span class="phone">&nbsp +1 (626) 232-5845</span>
+    <div id="work" class="portfolio">
+        <div class="portfolio-container">
+            <div class="workArea">
+                <div id="txGeneticsDiv" class="image-cropper">
+                    <a href="./txGenetics.html">
+                        <p id="txGeneticsLabel" class="hiddenLabel">Tx Genetics</p>
+                        <img class="portfolio-image" src="./images/txGentics/logo.jpg" alt="michael sadahiro event project">
+
+                    </a>
+                </div>
+                <div id="meetingPeopleDiv" class="image-cropper">
+                    <a href="./meetingsOthers.html">
+                        <p id="meetingOthersLabel" class="hiddenLabel">Meeting Others</p>
+                        <img class="portfolio-image" src="./images/events/events.png" alt="michael sadahiro event project">
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+
+    <div id="contactMe" class="contact-me">
+        <div class="contact-container">
+            <h1>Contact Me</h1>
+            <h2 class="sub-heading">I'm always looking forward to new opportunities</h2>
+            <a href="mailTo:michaelsadahiro@gmail.com">
+                <i class="fa fa-envelope contact-icon" aria-hidden="true"></i>
+                <span class="bottom-link">&nbsp michaelsadahiro@gmail.com</span>
+            </a>
+            </br>
+            <a href="https://drive.google.com/open?id=0B6F6__HhPYw0N21TSlAzNTAwX00" target="_blank">
+                <i class="fa fa-file-pdf-o contact-icon" aria-hidden="true"></i>
+                <span class="bottom-link">&nbsp View Resume</span>
+            </a>
+        </div>
+    </div>
     <div id="footerIcon">
-        <div class="footer-icon-container text-center">
-            <a href="mailTo:michaelsadahiro@gmail.com"><i class="fa fa-envelope icon" aria-hidden="true"></i>
-                <a href="https://www.linkedin.com/in/michaelsadahiro/" target="_blank"><i class="fa fa-linkedin-square icon" aria-hidden="true"></i></a>
-            <a href="https://github.com/msadahiro" target="_blank"><i class="fa fa-github icon" aria-hidden="true"></i></a>
-            <a href="https://www.facebook.com/sadahiro.michael" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/myykosadahiro/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <div class="footer-icon-container">
+            <a href="https://www.linkedin.com/in/michaelsadahiro/" target="_blank">
+                <i class="fa fa-linkedin-square icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/msadahiro" target="_blank">
+                <i class="fa fa-github icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/sadahiro.michael" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/myykosadahiro/" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
         </div>
     </div>
     <div id="footer">
