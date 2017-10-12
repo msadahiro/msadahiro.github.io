@@ -206,6 +206,12 @@ b{
   transition: all 0.5s ease-out;
   cursor: pointer;
 }
+.image-cropper > a > p{
+  color: rgb(2, 1, 1);
+}
+.image-cropper  > a:visited > p{
+  color: black;
+}
 .workArea{
   width: 50%;
   margin: 0 auto;
@@ -226,7 +232,7 @@ b{
   margin: 0 auto;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 
@@ -264,6 +270,9 @@ b{
   min-height: 100px;
   background-color: darkgray;
   text-align: center;
+}
+.footer-icon-container > a{
+  text-decoration: none;
 }
 .footer-icon-container>a>i{
   margin: 40px 0 0 20px;
