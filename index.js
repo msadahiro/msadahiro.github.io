@@ -14,12 +14,12 @@ $(document).ready(function () {
     $("body").toggleClass("changeBackground");
     $("#adjustIconColor").toggleClass("adjustIconColor")
   });
-  $('#meetingPeopleDiv').hover(function () {
-    $(this).find('#meetingOthersLabel').removeClass("hiddenLabel");
-    $(this).find('#meetingOthersLabel').addClass("projectLabel");
+  $('#runDiv').hover(function () {
+    $(this).find('#runLabel').removeClass("hiddenLabel");
+    $(this).find('#runLabel').addClass("projectLabel");
   }, function () {
-    $(this).find('#meetingOthersLabel').addClass("hiddenLabel");
-    $(this).find('#meetingOthersLabel').removeClass("projectLabel");
+    $(this).find('#runLabel').addClass("hiddenLabel");
+    $(this).find('#runLabel').removeClass("projectLabel");
   });
   $('#txGeneticsDiv').hover(function () {
     $(this).find('#txGeneticsLabel').removeClass("hiddenLabel");

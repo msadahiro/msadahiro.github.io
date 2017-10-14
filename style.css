@@ -144,7 +144,7 @@ canvas{
   border-radius: 50%;
   display: inline-block;
 }
-b{
+p > span{
   text-decoration: underline;
 }
 .resumeButton{
@@ -286,15 +286,17 @@ b{
   color: #526173;
 }
 
-/*Meetings others*/
-
-#meetingOthersHeading,
+/* other pages*/
+#otherPages{
+  background-color: white;
+}
+#runHeading,
 #txGeneticsHeading{
   width: 100%;
   height: 300px;
   overflow: hidden;
 }
-#meetingOthersHeading > img,
+#runHeading > img,
 #txGeneticsHeading > img{
   width: 100%;
 }
