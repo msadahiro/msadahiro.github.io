@@ -28,6 +28,13 @@ $(document).ready(function () {
     $(this).find('#txGeneticsLabel').addClass("hiddenLabel");
     $(this).find('#txGeneticsLabel').removeClass("projectLabel");
   });
+  $('#whatsforlunchDiv').hover(function () {
+    $(this).find('#whatsforlunchLabel').removeClass("hiddenLabel");
+    $(this).find('#whatsforlunchLabel').addClass("projectLabel");
+  }, function () {
+    $(this).find('#whatsforlunchLabel').addClass("hiddenLabel");
+    $(this).find('#whatsforlunchLabel').removeClass("projectLabel");
+  });
 });
 
 const modalNav = document.getElementById("myNav")
