@@ -35,6 +35,13 @@ $(document).ready(function () {
     $(this).find('#whatsforlunchLabel').addClass("hiddenLabel");
     $(this).find('#whatsforlunchLabel').removeClass("projectLabel");
   });
+  $('#movieDbDiv').hover(function () {
+    $(this).find('#movieDbLabel').removeClass("hiddenLabel");
+    $(this).find('#movieDbLabel').addClass("projectLabel");
+  }, function () {
+    $(this).find('#movieDbLabel').addClass("hiddenLabel");
+    $(this).find('#movieDbLabel').removeClass("projectLabel");
+  });
 });
 
 const modalNav = document.getElementById("myNav")
