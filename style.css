@@ -346,12 +346,13 @@ canvas{
 #txGeneticsHeading img,
 #whatsforlunchHeading img,
 #movieDbHeading img{
-  width:62%;
+  width:72%;
   height:100%;
 }
 #content{
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
+  overflow: hidden;
 }
 #content > h1,
 #content > p{
@@ -361,13 +362,29 @@ canvas{
 .githubLinks{
   display: inline-block;
 }
-.screenshots{
+.star{
+  position: relative;
+  display: inline-block;
+  width:40%;
+  left:5%;
+}
+.star-txGenetics{
+  width:100%;
+}
+.pictures{
+  width:50%;
+  float: left;
+}
+.project-screenshots{
   text-align: center;
   margin: 0 auto;
   overflow:hidden;
+  position: relative;
+  top:0;
 }
-.screenshots > img{
+.project-screenshots > img{
   max-width: 100%;
+  margin: 10% 0;
 }
 .backLink{
   position: fixed;
